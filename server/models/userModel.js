@@ -1,5 +1,5 @@
 class User{
-    //initialize the user
+    //initialize the user data structure
 
     constructor(){
         this.users=[];
