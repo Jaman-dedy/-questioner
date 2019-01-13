@@ -3,9 +3,7 @@ class User{
 
     constructor(){
         this.users=[];
-        this.rsvps=[];
-        this.questions=[];
-        this.meetups=[];
+       
     }
 
 }
