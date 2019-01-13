@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// @from controller
+// from controller
 
 meetupCtrl = require("../controllers/meetupController");
 
