@@ -2,8 +2,8 @@ const uuid= require("uuid");
 
 // Models
 
-const User= require("../models/userModel");
+const Rsvp= require("../models/rsvpModel");
 
 module.exports= {
-
+    
 }
