@@ -22,6 +22,10 @@ module.exports= {
          status : 201,
          data : [newUser]
      });
-    }    
+    },
+    all:(req, res)=>{
+        const users=User.findAllUsers();
+        return res.json(users);
+    } 
 
 }
