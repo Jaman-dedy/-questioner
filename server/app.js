@@ -8,6 +8,6 @@ const app= express();
 app.use(bodyParser.json());
 
 // router congiguration 
-app.use("/api/vi", userRouter);
+app.use("/api/v1", userRouter);
 
 module.exports=app;
