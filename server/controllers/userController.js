@@ -19,6 +19,6 @@ module.exports= {
      };
      User.createNewUser(newUser);
      return res.json(newUser);
-    }
+    }    
 
 }
