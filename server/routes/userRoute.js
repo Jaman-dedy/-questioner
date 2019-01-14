@@ -6,6 +6,6 @@ const router = express.Router();
 userCtrl = require("../controllers/userController");
 
 // user endpoints
-
+router.post("/",userCtrl.create);
 
 module.exports = router;
