@@ -9,6 +9,9 @@ class User{
         const element=this.users.push(data);
         return element;
     }
+    findAllUsers(){
+        return this.users;
+    }
 
 }
 //exporting the new user
