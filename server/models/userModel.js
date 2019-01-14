@@ -10,7 +10,7 @@ class User{
         return element;
     }
     findAllUsers(){
-        return this.users;
+        return this.users
     }
 
 }
