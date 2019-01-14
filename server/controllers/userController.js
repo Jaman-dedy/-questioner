@@ -7,7 +7,7 @@ const User= require("../models/userModel");
 module.exports= {
     create:(req, res)=>{
      const newUser={
-     id:User.length+1,
+     id:User.findAllUsers.length+1,
      firstname:req.body.firstname,
      lastname:req.body.lastname,
      othername:req.body.othername,
