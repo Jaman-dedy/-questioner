@@ -7,6 +7,6 @@ userCtrl = require("../controllers/userController");
 
 // user endpoints
 router.post("/",userCtrl.create);
-router.get("/", userCtrl.findAllUsers);
+router.get("/", userCtrl.all);
 
 module.exports = router;

@@ -25,7 +25,10 @@ module.exports= {
     },
     all:(req, res)=>{
         const users=User.findAllUsers();
-        return res.json(users);
+        return res.status(200).json({
+            status : 200,
+            data : users
+        });
     } 
 
 }
