@@ -7,7 +7,7 @@ const User= require("../models/userModel");
 module.exports= {
     create:(req, res)=>{
      const newUser={
-     id:uuid(),
+     id:Math.random(),
      firstname:req.body.firstname,
      lastname:req.body.lastname,
      othername:req.body.othername,
