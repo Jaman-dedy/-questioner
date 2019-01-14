@@ -7,7 +7,7 @@ const User= require("../models/userModel");
 module.exports= {
     create:(req, res)=>{
      const newUser={
-     id:Math.random(),
+     id:User.length+1,
      firstname:req.body.firstname,
      lastname:req.body.lastname,
      othername:req.body.othername,
@@ -18,7 +18,10 @@ module.exports= {
      isAdmin:req.body.isAdmin
      };
      User.createNewUser(newUser);
-     return res.json(newUser);
+     return res.status(201).json({
+         status : 201,
+         data : [newUser]
+     });
     }    
 
 }
